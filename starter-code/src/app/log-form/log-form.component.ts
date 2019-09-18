@@ -8,7 +8,7 @@ import { AccessControlLogService } from 'app/services/access-control-log.service
   providers: [AccessControlLogService]
 })
 export class LogFormComponent implements OnInit {
-  errorMessage: string ;
+  errorMessage: string = "" ;
   registredMessage = "Se ha registrado con éxito name y message!!";
 
   constructor(private accessControlService : AccessControlLogService) { }
@@ -17,10 +17,11 @@ export class LogFormComponent implements OnInit {
   }
 
   addAccess(theForm){
- 
+   
     if(theForm.valid && theForm.dirty){
-     
-      return this.accessControlService.addAccessItem(theForm.value.name,theForm.value.message)
+    this.errorMessage = ""
+    this.accessControlService.addAccessItem(theForm.value.name,theForm.value.message);
+    this.accessControlService.getAccessLog().forEach(log => console.log(log))
     }
     else {
 

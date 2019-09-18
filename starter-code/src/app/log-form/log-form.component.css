@@ -7,3 +7,31 @@
     font-weight: bold;
     color: rgb(31, 218, 31)
 }
+
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 0.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
+
+.theDiv {
+    padding: 50px;
+    border-radius: 20px;
+    background-color:rgba(68, 68, 68, 0.7)
+}
+
+button {  
+    min-width: 150px
+}

@@ -12,7 +12,7 @@ export class AccessControlLogService {
     this.logMessages.push(accessObject)
   }
 
-  getAccesLog() {
+  getAccessLog() {
     return this.logMessages
   }
 }

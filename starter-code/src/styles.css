@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("https://images.alphacoders.com/482/thumb-1920-482000.jpg");
+    background-size: cover;
+    height: 100%;
+}
