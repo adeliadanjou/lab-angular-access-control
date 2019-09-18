@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AccessControlLogService {
   
-  logMessages: Object[];
+  logMessages: Array<Object> = [];
 
   constructor() { }
 

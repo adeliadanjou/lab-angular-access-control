@@ -1,0 +1,9 @@
+.invalido {
+    color:red;
+    font-weight: bold
+}
+
+.registrado {
+    font-weight: bold;
+    color: rgb(31, 218, 31)
+}

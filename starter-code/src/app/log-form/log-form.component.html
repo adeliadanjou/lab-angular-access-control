@@ -1,0 +1,15 @@
+
+<form (ngSubmit)="addAccess(theForm)" #theForm="ngForm" >
+
+  <label for="name">Name: </label>
+  <input type="text" name="name" [(ngModel)]="name"  #theName="ngModel" required />
+
+  <label for="name">Message: </label>
+  <input type="text" name="message" [(ngModel)]="message" #theMessage="ngModel" required  />
+
+  <button type="submit" >Add!</button>
+</form>
+
+
+<p class="invalido">{{errorMessage}}</p>
+<p class="registrado" *ngIf="theForm.submitted">{{registredMessage}}</p>
